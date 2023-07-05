@@ -3,6 +3,12 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 ---
 
 <!DOCTYPE html>
@@ -12,7 +18,55 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main></main>
+    <main>
+      <section>
+        <h2>Greeting</h2>
+        <p>みなさん、ようこそ、久野晃司の個人的なログ蓄積場所へ。</p>
+        <p>ここは現在、以下の環境で生成されています。</p>
+        <ul>
+          <li>
+            <a href="https://github.com/Olein-jp/olein-jp.github.io"
+              >GitHub Repo</a
+            >
+          </li>
+          <li>GitHub Pages</li>
+          <li><a href="https://astro.build/">Astro</a></li>
+        </ul>
+        <p>
+          僕の個人的な公開情報は全てこちらのサイトに集約し、リンク等でアクセスができるように整備を進めていきます。
+        </p>
+      </section>
+      <section>
+        <h2>Recentry logs</h2>
+        <ul class="post-list">
+          {
+            posts.map((post) => (
+              <li>
+                <FormattedDate date={post.data.pubDate} />
+                <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
     <Footer />
+    <style>
+      .post-list {
+        list-style-type: none;
+        padding: unset;
+      }
+      .post-list li {
+        display: flex;
+      }
+      .post-list li :global(time) {
+        flex: 0 0 130px;
+        font-style: italic;
+        color: #595959;
+      }
+      .post-list li a:visited {
+        color: #8e32dc;
+      }
+    </style>
   </body>
 </html>

@@ -1,15 +1,33 @@
 ---
-title: "自伝的なブログを始めることにした"
+title: "なぜこのウェブサイトを作ったのか"
 description: "自分の自伝的な記録をできるだけ長く保管できる形で、インターネット上にログを残す方法として、このブログを始めた"
 pubDate: "2023-07-04"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+このブログは、[GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) を使って公開されています。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+GitHub Pages はリポジトリを Web ページに変換することができ、手軽に Web ページを利用することができます。当然、ちょっと黒い画面でコマンドを書いたりする必要はあるので、人によっては手軽でないと言われるかも知れませんが…。
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+なぜ、このウェブサイトを作ろうと思ったのかを、最初の投稿として記しておきたいと思います。
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## ここに掲載する情報について
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+### 目的
+
+ここにはかなり個人的な投稿しか載せていかないであろうと考えています。仕事に関する技術的なことや営業的な内容は全て事業サイト（[Olein Design](https://olein-design.com)）に、これまでと変わらず掲載をしていきます。
+
+では、何をこちらに投稿・掲載していくのか。ここでは、久野晃司個人が考えたこと、取り組んでいること、思っていることを **「記録」として「長期間保管」することを目的** としています。
+
+ですので、ホスティングは GitHub リポジトリ（https://github.com/Olein-jp/olein-jp.github.io）で全て行っています。GitHub という地球上の巨大なソースコード保管場所が消滅しない限りは、おそらくテキストデータの原盤は保管されると期待しています。
+
+そして、ウェブサイトとしての体裁は Astro というフレームワークを利用しています。こちらは、テキストをどこから執筆しても `main` ブランチにコミットすることでビルドが走り、ウェブサイトを構築してくれます。執筆を投稿する時以外は作動しません。
+
+### 内容
+
+内容はかなり個人的なものになると想像しています。生き方、家族、子供のことといったものです。
+
+そういった内容ですので、見たいという方もかなり限られると思います。また、長期保管を目的としているので、僕に何かがあった際に、家族が見れるようにしておくという目的もあります。
+
+なぜなら、僕は手帳や日記などを定期的に書くことをとても苦手としています。書くことを強制的に考えるというのが、どうしてもうまくできない性格のようです。
+
+ですので、書きたいと思った時に書ける環境がとても大事になってきます。また、できるだけ何かに依存しない形を採用することで、長期間の保管を実現したいと考えています。
